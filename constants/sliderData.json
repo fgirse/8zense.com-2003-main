@@ -1,0 +1,59 @@
+[
+    {
+      "id": 1,
+      "title": "ARE AWESOME",
+      "tagline": "NEXTJS 13 & SWIPER SLIDER",
+      "image": "/assets/images/avatar-sm-bardot.png",
+      "buttons": [
+        {
+          "id": 1,
+          "text": "Brigitte Bardot",
+          "link": "/assets/images/avatar-sm-bardot.png",
+          "type": "btn-dark btn-circle"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "GIVE IT A SHOOT",
+      "tagline": "IF YOU LIKE IT",
+      "image": "/assets/images/avatar-sm-belmondo.png",
+      "buttons": [
+        {
+          "id": 2,
+          "text": "Jean Paul Belmondo",
+          "link": "https://www.pexels.com/@julia-m-cameron/",
+          "type": "btn-dark btn-circle"
+        }
+      ]
+    },
+    {
+        "id": 3,
+        "title": "ARE AWESOME",
+        "tagline": "NEXTJS 13 & SWIPER SLIDER",
+        "image": "/assets/images/avatar-sm-zidane.png",
+        "buttons": [
+          {
+            "id":3,
+            "text": "Zinedin Zidane",
+            "link": "/assets/images/avatar-sm-cevert.png",
+            "type": "btn-dark btn-circle"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "ARE AWESOME",
+        "tagline": "NEXTJS 13 & SWIPER SLIDER",
+        "image": "/assets/images/rastergrafikobg.png",
+        "buttons": [
+          {
+            "id": 4,
+            "text": "Francoise Cevert ",
+            "link": "#",
+            "type": "btn-dark btn-circle"
+          }
+        ]
+      }
+  ]
+  

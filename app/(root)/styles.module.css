@@ -1,0 +1,38 @@
+.section{
+    background-color: rgb(237, 158, 55);
+    margin-right: auto;
+    margin-left: auto;
+    width: 97vw;
+    }
+    
+    .imagecontainer {
+        position: relative;
+        top: 29vh;
+        width: 50%;
+    }
+         .div {
+          position: unset !important;
+        }
+      
+        .imagehome {
+          object-fit: contain;
+          width: 100% !important;
+          position: relative !important;
+          height: unset !important;
+        }
+
+        .main{
+          min-height: 100dvh;
+          flex-grow: 1;
+          place-content: center;
+          background-color: transparent;
+        }
+
+        .collaps-Feature {
+
+          margin: auto;
+          width: 100vw;   
+          height: auto;
+          background-color: red;
+        }
+      

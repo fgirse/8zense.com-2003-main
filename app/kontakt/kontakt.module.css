@@ -1,0 +1,10 @@
+.main {
+  min-height: 100dvh;
+  display: grid;
+  place-content: center;
+  background-color: #edebe4;
+}
+
+#emailIcon {
+  color: lime;
+}

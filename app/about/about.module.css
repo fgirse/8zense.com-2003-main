@@ -1,0 +1,30 @@
+.image-container {
+
+    width: 50%;
+  
+     .div {
+      position: unset !important;
+    }
+  
+    .image-about {
+      object-fit: contain;
+      width: 100% !important;
+      position: relative !important;
+      height: unset !important;
+    }
+
+
+    .main {
+
+      min-height: 100dvh;
+      display: grid;
+      place-content: center;
+      background-color: rgb(243, 239, 234);
+    }
+
+    .headingA {
+      -webkit-text-stroke-width: 3.33px;
+      -webkit-text-stroke-color: #e9ae0d;
+  
+    }
+  }

@@ -1,0 +1,30 @@
+.body {
+display: grid;
+flex-direction: column;
+overflow-x: hidden;
+min-height: 100dvh;
+
+} 
+
+
+
+.section{
+    background-color: royalblue;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100vw;
+    }
+  
+      
+        .image-home {
+          object-fit: cover;
+          width: 100% !important;
+          position: relative !important;
+          top: 25vh;
+          height: unset !important;
+        }
+      
+        .container {
+background-color: transparent;
+
+        }
