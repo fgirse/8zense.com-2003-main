@@ -1,20 +1,20 @@
-import type { Metadata } from 'next';
-import { Saira, Saira_Condensed } from 'next/font/google';          
+import type { Metadata } from 'next';         
 import 'normalize-css/normalize.css';
 import './globals.css';
 import styles from './home.module.css';
 import { ClerkProvider } from '@clerk/nextjs';
 import { neobrutalism } from '@clerk/themes';
 import link from 'next/link';
-import { AntdRegistry } from '@ant-design/nextjs-registry';
 
+import { Roboto_Condensed, Bowlby_One_SC } from 'next/font/google';
 
-const sairaCond = Saira_Condensed({
-  display: 'swap',
+const roboto_c = Roboto_Condensed({
   subsets: ['latin'],
-  weight: ['300', '400', '700', '900',],
-  variable: '--font-saira_c',
-    });
+  weight: ['400', '700'],
+    variable: '--font-roboto_c',
+});
+
+
 
     export const metadata: Metadata = {
       title: '8zenSe.com',
@@ -37,7 +37,7 @@ export default function RootLayout({
    <html lang="en" className="bg-transparent">
 
 
-      <body className={styles.container}><AntdRegistry>{children}</AntdRegistry></body>
+      <body suppressHydrationWarning={true} className={styles.container}>{children}</body>
     </html>
     </ClerkProvider>
   )

@@ -1,0 +1,27 @@
+.body{
+
+
+    background-color: rgb(237, 158, 55);
+    margin-right: auto;
+    margin-left: auto;
+    width: 97vw;
+    }
+
+
+
+    .main {
+
+          min-height: 100dvh;
+          flex-grow: 1;
+          place-content: center;
+          background-color: #ff00dd;
+
+    }
+    
+      
+        
+
+        
+
+
+        

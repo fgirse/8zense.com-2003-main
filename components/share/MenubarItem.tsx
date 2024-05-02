@@ -7,10 +7,10 @@ import { useState } from "react";
 import Link from "next/link";
 import { IoIosArrowDown } from "react-icons/io";
 
-import todoImage from "@/public/assets/icons/icon-todo.svg";
+//import todoImage from "@/public/assets/icons/";
 import calendarImage from "@/public/assets/icons/calendar.svg";
-import remindersImage from "@/public/assets/icons/icon-reminders.svg";
-import planningImage from "@/public/assets/icons/icon-planning.svg";
+//import remindersImage from "@/public/assets/icons/icon-reminders.svg";
+//import planningImage from "@/public/assets/icons/icon-planning.svg";
 
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
@@ -39,7 +39,7 @@ const navItems: NavItem[] = [
       },
       {
         label: "Reference Projects",
-        link: "#section-refProj"
+        link: "#section-projRef"
       },
       {
         label: "Testimonials",
@@ -62,27 +62,27 @@ const navItems: NavItem[] = [
   
   {
     label: "Impressum",
-    link: "#",
+    link: "./impressum",
     children: [
       {
         label: "Datenschutz",
         link: "#",
-        iconImage: todoImage
+        iconImage: calendarImage
       },
       {
-        label: "Impressum",
+        label: "Cookies",
         link: "#",
         iconImage: calendarImage
       },
       {
         label: "Rechtliches",
         link: "#",
-        iconImage: remindersImage
+        iconImage: calendarImage
       },
       {
         label: "frei",
         link: "#",
-        iconImage: planningImage
+        iconImage: calendarImage
       }
     ]
   },
@@ -147,13 +147,13 @@ export default function Navbar() {
         </div>
         {/* navitems */}
       </section>
-      <Link href="/user-profile" className="text-xl text-lime-400">
-      <button className="h-fit text-lime-400 transition-all hover:text-black/90">
+      <Link href="/user-profile" className="text-sm text-lime-300">
+      <button className="w-36 py-1 px-2 border-1 rounded-xl ml-3 h-fit text-lime-300 transition-all hover:bg-zenseSignal2/90">
           My Profile
         </button>
         </Link>
       {/* right side data */}
-      <section className=" hidden md:flex   items-center gap-8 ">
+      {/*<section className=" hidden md:flex items-center gap-8 ">
         <button className="h-fit text-neutral-400 transition-all hover:text-black/90">
           Login
         </button>
@@ -161,7 +161,7 @@ export default function Navbar() {
         <button className="h-fit rounded-xl border-2 border-neutral-400 px-4 py-2 text-neutral-400 transition-all hover:border-black hover:text-black/90">
           Register
         </button>
-      </section>
+      </section>*/}
 
       <FiMenu
         onClick={openSideMenu}
@@ -194,7 +194,7 @@ function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
           ))}
         </div>
 
-        <section className="  flex  flex-col   gap-8  mt-4 items-center">
+       {/* <section className="  flex  flex-col   gap-8  mt-4 items-center">
           <button className="h-fit text-neutral-400 transition-all hover:text-black/90">
             Login
           </button>
@@ -202,7 +202,7 @@ function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
           <button className="w-full  max-w-[200px]  rounded-xl border-2 border-neutral-400 px-4 py-2 text-neutral-400 transition-all hover:border-black hover:text-black/90">
             Register
           </button>
-        </section>
+        </section>*/}
       </div>
     </div>
   );
