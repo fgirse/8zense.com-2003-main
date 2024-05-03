@@ -11,6 +11,7 @@ const Example = () => {
           Scroll down
         </span>
       </div>
+      <h1 className="text-center text-zenseWhite uppercase text-4xl md:6xl lg:text-[5.33rem]">Das Team</h1>
       <HorizontalScrollCarousel />
       <div className="flex h-48 items-center justify-center">
         <span className="font-semibold uppercase text-neutral-500">
