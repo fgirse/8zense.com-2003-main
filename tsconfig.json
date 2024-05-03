@@ -35,4 +35,5 @@
     "components/share/ParticleRing.tsx"
 , "components/Contact.jsx"  ],
   "exclude": ["node_modules"]
-}
+  
+  }

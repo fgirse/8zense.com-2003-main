@@ -1,4 +1,3 @@
-20;
 import { getListPage } from "@/lib/contentParser";
 import link from "next/link";
 import { ClientAnimationWrapper } from "@/components/share/ClientAnimationWrapper";
@@ -100,9 +99,12 @@ export default function Home() {
               Wohnung, Haus, Büro ofer Praxis. Sprechen Sie uns an - Wir freuen
               uns auf Sie!
             </p>
-            <EmailModal/>
+            
           
           </section>
+
+          <EmailModal/>
+          
           <section className="container w-full px-8 grid grid-cols-1 lg:grid-cols-1 items-center gap-8 max-w-6xl mx-auto">
             <h1 className="relative px-1 uppercase -mt-12 leading-10 text-[3.0rem] font-black md:text-center md:text-[3.750rem] lg:leading-0 lg:text-[4rem] bg-gradient-to-b from-slate-900 via bg-slate-600 to-slate-500 bg-clip-text text-transparent lg:top  lg:tracking-wider lg:leading-0 lg:text-9xl">
               Timeless Design

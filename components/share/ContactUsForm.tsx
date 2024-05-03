@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-hot-toast'; // updated code
@@ -9,7 +9,7 @@ type FormInput = {
   message: string;
 };
 
-export default function ContactUsForm() {
+ const ContactUsForm =()=> {
   const {
     register,
     handleSubmit,
@@ -64,7 +64,7 @@ export default function ContactUsForm() {
         />
         <textarea
           className='mt-4 mb-5 block w-full rounded-md border px-3 text-gray-600 outline-none focus:border-stone-500 focus:outline-none md:mb-0'
-          placeholder='Nachricht an 8zense.com'
+          placeholder='Message Us'
           rows={6}
           required
           {...register('message')}
@@ -73,11 +73,13 @@ export default function ContactUsForm() {
         <button
           disabled={isSubmitting}
           type='submit'
-          className='bg-zenseSignal2 px-6 py-3 disabled:bg-gray-500 block-primary rounded-md cursor-pointer text-white mt-4 font-bold'
+          className='bg-blue-700 px-6 py-3 disabled:bg-gray-500 block-primary rounded-md cursor-pointer text-white mt-4 font-bold'
         >
-          Sende email-Nachricht
+          Book Appointment
         </button>
       </form>
     </div>
   );
 }
+
+export default ContactUsForm
