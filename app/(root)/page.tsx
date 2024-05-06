@@ -39,10 +39,10 @@ export default function Home() {
           <div className="relative top-[12vh]flex flex-col items-center justify-center lg:relative bg-black/20 lg:flex lg:flex-row lg:justify-evenly lg:items-stretch lg:gap-x-3 lg:top-[32vh] xl:top-[43vh] 2xl:[40vh]">
             {/*============================== LINKS =======================*/}
             <div className="px-2 sm:px-5 flex flex-col justify-center lg:w-2/3 lg:py-20">
-              <h1 className="mt-5 py-3 text-zenseWhite font-black leading-3 text-4xl uppercase sm:text-7xl sm-leading-3 lg:py-12 lg:mt-3 lg:relative lg:text-zenseWhite lg:text-[4.666rem] lg:leading-3 lg:font-black  lg:uppercase lg:text-left xl:text-[7.166rem]">
+              <h1 className="mt-5 py-3 text-zenseWhite font-black leading-3 text-4xl uppercase sm:text-7xl sm-leading-3  lg:py-12 lg:mt-3 lg:relative lg:text-zenseWhite lg:text-[4.666rem] lg:leading-3 lg:font-black  lg:uppercase lg:text-left xl:text-[7.166rem]">
                 design interiore
               </h1>
-              <h1 className=" -mt-2 font-black lg:text-left leading-3 text-5xl text-lime-200 uppercase sm:text-8xl lg:-mt-3 lg:text-[8.33rem] lg:font-black xl:text-[11.33rem] lg:leading-3 ">
+              <h1 className=" -mt-2 font-black lg:text-left leading-3 text-5xl text-lime-200 uppercase sm:text-8xl md:-mt-5 md:text-8xl lg:-mt-3 lg:text-[8.33rem] lg:font-black xl:text-[11.33rem] lg:leading-3 ">
                 8zenSe.com
               </h1>
               <p className=" text-zenseWhite sm:text-3xl lg:text-4xl lg:font-black lg:text-left">
@@ -101,8 +101,8 @@ export default function Home() {
               uns auf Sie!
             </p>
           </section>
-          <div className="flex flex-col bg-blue-500">
-            <Email />
+          <div className="flex flex-col bg-zenseGrey-500 mb-20">
+            <EmailModal />
           </div>
           <section className="container w-full px-8 grid grid-cols-1 lg:grid-cols-1 items-center gap-8 max-w-6xl mx-auto">
             <h1 className="relative px-1 uppercase -mt-12 leading-10 text-[3.0rem] font-black md:text-center md:text-[3.750rem] lg:leading-0 lg:text-[4rem] bg-gradient-to-b from-slate-900 via bg-slate-600 to-slate-500 bg-clip-text text-transparent lg:top  lg:tracking-wider lg:leading-0 lg:text-9xl">
