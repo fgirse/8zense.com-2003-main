@@ -23,7 +23,7 @@ import Skizze from "@/public/assets/images/skizze.png";
 import Button from "@/components/share/Button";
 import Animation from "@/components/share/Lotticreator";
 import Animation2 from "@/components/share/Lottiwalking";
-import Email from "@/components/share/ContactUsForm";
+import Email from "@/components/share/contact-us";
 import EmailModal from "@/components/share/EmailModal";
 export default function Home() {
   return (

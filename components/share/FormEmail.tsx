@@ -44,7 +44,7 @@ export default function Home() {
     }
   }
   return (
-    <main className="bg-zenseGrey flex flex-col items-center justify-between p-24">
+    <main className=" bg-zenseGrey flex flex-col items-center justify-between p-24">
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
           <FormField
@@ -54,7 +54,7 @@ export default function Home() {
               <FormItem>
                 <FormLabel>Username</FormLabel>
                 <FormControl>
-                  <Input placeholder="max mustermann" {...field} />
+                  <Input className="text-slate-800" placeholder="max mustermann" {...field} />
                 </FormControl>
                 <FormDescription>
                   This is your public display name.

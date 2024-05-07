@@ -10,11 +10,11 @@ export const VanishText = () => {
         Das sagen unsere Kunden:
         <AnimatedText
           phrases={[
-            "Lobeshymnen",
-            "Statements ",
+            "Lobeshymnen 🏆🏆🏆",
+            "Statements 🔝🗯🆒 ",
             "Dankeschöns",
-            "Sterne ",
-            "Thumb-Up's",
+            "Sterne ⭐️⭐️⭐️",
+            "Thumb-Up's 👍🏼👍🏼👍🏼",
           ]}
         />
       </h3>

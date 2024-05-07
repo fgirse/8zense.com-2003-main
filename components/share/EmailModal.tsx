@@ -3,15 +3,14 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { Dispatch, SetStateAction, useState } from "react";
 import { FiAlertCircle } from "react-icons/fi";
-import EmailTemplate from "@/components/share/email-template";
-import FormEmail from"@/components/share/FormEmail";
+import ContactUs from"@/components/share/contact-us";
 import Image from "next/image";
 import Logo from "@/public/assets/images/LogoEZ990.svg"
 
 const ExampleWrapper = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="px-4 py-3
+    <div className="px-5 py-3
      mb-12 grid place-content-center">
       <button
         onClick={() => setIsOpen(true)}
@@ -53,15 +52,15 @@ const SpringModal = ({
               <div className="bg-white w-36 h-36 rounded-xl text-3xl text-indigo-600 grid place-items-center mx-auto">
                 <Image src={Logo} sizes="100vw "alt="Logo"/>
               </div>
-              <h3 className="text-3xl font-bold text-center mb-5">
+              <h3 className="py-3 text-3xl font-bold text-center mb-5">
                 Send email to 8zense.com
               </h3>
               
-              <FormEmail/>
+              <ContactUs/>
               <div className="flex gap-2">
                 <button
                   onClick={() => setIsOpen(false)}
-                  className="w-36 bg-zenseSignal2 hover:bg-white/10 transition-colors text-white font-semibold py-2 rounded"
+                  className="mt-3 w-36 bg-zenseSignal2 hover:bg-white/10 transition-colors text-white font-semibold py-2 rounded"
                 >
                   zurück
                 </button>

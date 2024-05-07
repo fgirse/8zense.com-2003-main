@@ -1,28 +1,26 @@
-import { EmailTemplate } from '@/components/share/email-template';
 import { Resend } from 'resend';
-import { NextRequest, NextResponse } from "next/server";
+import * as React from 'react';
+import { ContactUsEmail } from '@/components/email/contact-us';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export async function POST(req: NextRequest) {
-  const json = req.json();
-  const { username, attachments } = await json;
+export async function POST(req: Request) {
+  const payload = await req.json();
 
   try {
-    const data = await resend.emails.send({
-      from: 'Acme <onboarding@resend.dev>',
-      to: ['replace with your adress'],
-      subject: 'Hello world',
-      text: 'Hello world',
-      react: EmailTemplate({ username, }),
-      attachments: attachments.map((file : any) => ({
-        filename: file.filename,
-        content: file.content,
-      })),
+    const { data, error } = await resend.emails.send({
+      from: 'info@8zense.com',
+      to: payload.email,
+      subject: `Vielen Dank für Interesse an 8zense.com, ${payload.name}`,
+      react: ContactUsEmail(payload),
     });
 
-    return NextResponse.json(data);
+    if (error) {
+      return Response.json({ error });
+    }
+
+    return Response.json({ data });
   } catch (error) {
-    return NextResponse.json({ error });
+    return Response.json({ error });
   }
 }
